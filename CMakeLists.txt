@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(cv_template_matching)
+set(CMAKE_BUILD_DIRECTORY ${Build_DIR})
+find_package(OpenCV REQUIRED)
+add_executable(cv_template_matching main.cpp)
+target_link_libraries(cv_template_matching ${OpenCV_LIBS})
